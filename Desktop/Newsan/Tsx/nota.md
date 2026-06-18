@@ -1,3 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div className="grid grid-cols-2 gap-4">
   <div>
     <p className="text-blue-200 font-bold text-base mb-3">Detalle</p>
