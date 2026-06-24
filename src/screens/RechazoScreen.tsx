@@ -9,11 +9,7 @@ interface Props {
   onTab: (t: Tab) => void;
 }
 
-<<<<<<< HEAD
 export default function RechazoScreen({ onTab }: Props) {
-=======
-export default function RechazoScreen({ onTab}: Props) {
->>>>>>> 6de8f39680414476ddc68e9a7a793f5748ccd4a3
   const [cod, setCod] = useState("");
   const [def, setDef] = useState("");
   const [cau, setCau] = useState("");
@@ -27,10 +23,7 @@ export default function RechazoScreen({ onTab}: Props) {
     if (!completo) return;
     setGrdando(true);
     try {
-<<<<<<< HEAD
       localStorage.setItem("rechazo_datos", JSON.stringify({ cod, def, cau, ori }));
-=======
->>>>>>> 6de8f39680414476ddc68e9a7a793f5748ccd4a3
       setGrdado(true);
       setTimeout(() => {
         setGrdado(false);
@@ -81,8 +74,4 @@ export default function RechazoScreen({ onTab}: Props) {
       </div>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6de8f39680414476ddc68e9a7a793f5748ccd4a3

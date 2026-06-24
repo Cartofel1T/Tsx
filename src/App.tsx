@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
-=======
-import { useState } from "react";
->>>>>>> 6de8f39680414476ddc68e9a7a793f5748ccd4a3
 import { type Pantalla, type Tab } from "./types";
 import LoginScreen from "./screens/LoginScreen";
 import HomeScreen from "./screens/HomeScreen";
@@ -23,20 +19,9 @@ export default function App() {
       {pant === "login"     && <LoginScreen onLogin={() => setPant("home")} />}
       {pant === "home"      && <HomeScreen onTab={cambiarTab} />}
       {pant === "inicio"    && <InicioScreen onTab={cambiarTab} />}
-<<<<<<< HEAD
       {pant === "fin"       && <FinScreen onTab={cambiarTab} />}
       {pant === "rechazo"   && <RechazoScreen onTab={cambiarTab} />}
       {pant === "reparador" && <ReparadorScreen onTab={cambiarTab} onVolver={() => setPant("rechazo")} />}
     </>
   );
 }
-=======
-      {pant === "fin"       && <FinScreen onTab={cambiarTab}/>}
-      {pant === "rechazo"   && <RechazoScreen onTab={cambiarTab} />}
-      {pant === "reparador" && <ReparadorScreen onTab={cambiarTab} onVolver={function (): void {
-        throw new Error("para quitar el error.");
-      } }/>}
-    </>
-  );
-}
->>>>>>> 6de8f39680414476ddc68e9a7a793f5748ccd4a3
